@@ -207,8 +207,8 @@ text-align: justify;
 
 .icon-card {
   border-radius: 32px;
-background: linear-gradient(145deg, #cfcece, #f6f5f5);
-box-shadow:  12px 12px 24px #bfbebe,
+  background: linear-gradient(145deg, #cfcece, #f6f5f5);
+  box-shadow:  12px 12px 24px #bfbebe,
              -12px -12px 24px #ffffff;
   padding: 20px;
   margin: 10px;

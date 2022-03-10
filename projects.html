@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--css styles-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+<!--favicons-->
+    <link 
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+    rel="icon"
+    sizes="32x32"
+    type="images/png"
+    href="assets/icons/favicon-32x32.png"
+    />
+<!--animate css CDN-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Harsha Vardhan | Web Developer</title>
+    <script>
+      //some default pre init
+      var PB = PB || {};PB.q = PB.q || [];PB.events = PB.events || [];
+      
+      //PushBots ApplicationId (required)
+      PB.app_id = "6223bffa76334b02987d9663";
+      //Your domain name, must be HTTPS or localhost  (required)
+      PB.domain = "https://harshakanna.tech";
+      //Update and uncomment it if you are using custom safari certificate for your app
+      PB.safari_push_id = "web.com.pushbots.safaripush";
+      //****************************************
+      
+      PB.logging_enabled = true;
+      PB.auto_subscribe = true;
+      
+      //Custom worker and manifest URL
+      //PB.worker_url = PB.domain + "/pushbots-worker.js";
+      
+      //Welcome notification message
+      PB.welcome = {title:"Welcome ",message:"Thanks for subscribing!", url :PB.domain};
+      
+      function sendNotification(){
+            PB.register();
+            PB.q.push(["sendNotification", {title:"Hey ",message:"Why not?", url :"https://harshakanna.tech"}]);
+      }
+      
+      </script>
+      
+      <script src="//cdn.pushbots.com/js/sdk.min.js" type="text/javascript" onload="PB.init()" async></script>
+ </head>
+
+  <body>
+    <!--navbar-->
+    <nav>
+      <a href="index" title="Logo"> <img class="logo-img" 
+        src="https://blog.flamingtext.com/blog/2022/02/19/flamingtext_com_1645251616_759129781.gif" alt="logo">
+      </a>
+        <ul class="navigation">
+            <li><a href="index" class="nav-link" title="Home">Home</a></li>
+            <li><a href="about" class="nav-link" title="About">About</a></li>
+            <li><a href="skills" class="nav-link" title="Skills">Skills</a></li>
+            <li><a href="contact" class="nav-link" title="Contact">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+
+
+
+    </nav>
+    
+
+   
+
+    <!--projects section-->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/cart.webp"
+              alt="cart"
+              loading="lazy"
+              class="project-pic-cart"
+            />
+            <h3 class="project-title">Shopping Cart Robot</h3>
+            <p class="project-details">
+              A shopping that assists the customer, which is made using
+              Machine Learning includes OpenPose, Greater Recurrent Neural Network(GRU).
+            </p>
+            <a href="https://robomechjournal.springeropen.com/articles/10.1186/s40648-019-0150-1" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          
+          <div class="project-container project-card">
+            <img
+              src="assets/images/pp.png"
+              alt="uipath"
+              loading="lazy"
+              class="project-pic"
+              
+            />
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-details">
+                My Personal Portfolio, developed using HTML, CSS, Java Script.
+                </Script>
+            </p>
+            <a href="https://harshakanna.tech" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/facial recognition.jpg"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Facial Recognition</h3>
+            <p class="project-details">
+              A simple face recognition tool using Python and OpenCV
+              which detects the faces in real-time
+            </p>
+            <a href="https://www.geeksforgeeks.org/python-face-recognition-using-gui/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          
+        </div>
+      </section>
+
+    <!--contact section-->
+      <section class="contact" id="contact">
+          <h2>
+          Get in touch with me
+          </h2>
+          <div class="contact-form-container">
+            <div class="contact-form">
+              <form action="https://formspree.io/f/xvologny" method="POST">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="sender-email"
+                      placeholder="Enter Your Email"
+                      class="input-field"
+                      required
+                    />
+
+                </div>
+                <div class="form-control">
+                  <label for="Message">Message</label>
+                  <textarea
+                    id="message"
+                    cols="60"
+                    rows="10"
+                    placeholder="Enter Your Message"
+                    name="message"
+                    class="input-field"
+                    required
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="submit"
+                  id="submit-btn"
+                  class="submit-btn"
+                />
+                  
+                  
+              </form>
+            </div>
+            
+          </div>
+
+      </section>
+
+    <!--social accoounts- fixed to the right-->
+    <div class="socials">
+      <a href="mailto:harsha@harshakanna.tech" target="_blank">
+        <img
+          src="assets/icons/email.png"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+     
+      <a href="https://www.instagram.com/happy.harsha_/" target="_blank">
+        <img
+          src="assets/icons/instagram2.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/harsha-vardhan-kanna-817148170" target="_blank">
+        <img
+          src="assets/icons/linkedin3.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+        />
+      </a>
+      <a href="https://github.com/Harshakanna8733" target="_blank">
+        <img 
+        src="assets/icons/github.png" 
+        alt="Github" 
+        class="socicon"
+      />
+      </a>
+    </div>
+
+    <!--scroll to top-->
+    <i class="scroll-up" id="scroll-up">
+      <img
+      src="assets/icons/scrolltotop.png"
+      class="scoicon up-arrow"
+      alt="scroll-up"
+      />
+    </i>
+
+    <!--footer section-->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with  &#129505; by &hamilt;
+        <a href="https://www.instagram.com/happy.harsha_/" target="_blank">Harsha Vardhan Kanna</a>
+      </p>
+    </footer>
+
+    <!--website scripts-->
+    <script src="assets/js/app.js"></script>
+
+    <!--ion icon scripts-->
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script
+     nomodule
+     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
+  </body>
+</html>

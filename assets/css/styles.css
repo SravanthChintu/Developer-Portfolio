@@ -59,14 +59,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 3rem;
     background-color: var(--bg-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .logo-img{
-    width: 20em;
-    height: 2em;
+    width: 25em;
+    height: 3em;
     margin: 0;
     /*border-bottom: 0px;*/
     /*font-family: "San Francisco";*/
